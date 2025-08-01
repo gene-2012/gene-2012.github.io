@@ -1,0 +1,44 @@
+[
+    {
+        "title": "CoolFire 8 篇",
+        "author": "CoolFire",
+        "description": "20 世纪末和 21 世纪初，由 CoolFire 编写的黑客入门教程",
+        "year": "2000",
+        "filename": "coofire.pdf",
+        "tags": [
+            "hacking",
+            "hacker",
+            "security"
+        ]
+    },
+    {
+        "title": "Winnowing: Local Algorithms for Document Fingerprinting",
+        "author": "Saul Schleimer, Daniel S. Wilkerson, Alex Aikon",
+        "description": "A file fingerprinting algorithm, which is used to identify duplicate documents.",
+        "year": "2005",
+        "filename": "moss_document.pdf",
+        "tags": [
+            "fingerprint",
+            "text",
+            "algorithm",
+            "hash",
+            "cheat"
+        ]
+    },
+    {
+        "title": "Python 编程：从入门到实践（第三版）",
+        "author": "Eric Matthes",
+        "description": "Python 很棒的入门书籍",
+        "year": "2019",
+        "filename": "python_crash_course_3rd_edition.pdf",
+        "tags": [
+            "python",
+            "algorithm",
+            "beginner",
+            "django",
+            "pygame",
+            "matpolotlib",
+            "OOP"
+        ]
+    }
+]
