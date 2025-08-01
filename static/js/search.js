@@ -30,7 +30,7 @@ function setCookie(name, value, minutes) {
 }
 
 async function fetchData() { 
-    // Fetch from http://127.0.0.1/book_detail.json
+    // Fetch from /book_detail.json
     // Check last_update cookie
     const lastUpdate = getCookie('last_update');
     const nowStamp = Date.now();
@@ -38,7 +38,7 @@ async function fetchData() {
     if (nowStamp - lastUpdate <= 10 * 60 * 1000 && localStorageData) {
         return JSON.parse(localStorageData);
     }
-    const response = await fetch('http://127.0.0.1:8000/book_detail.json');
+    const response = await fetch('book_detail.json');
     const data = await response.json();
     localStorage.setItem('book_detail', JSON.stringify(data));
     setCookie('last_update', nowStamp, 10);
