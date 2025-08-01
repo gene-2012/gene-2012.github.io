@@ -3,32 +3,9 @@ Allow: /
 Allow: /index.html
 Allow: /search.html
 Allow: /legal.html
+Allow: /sitemap.xml
 Disallow: /static/js/
 Disallow: /static/css/
 Disallow: /book_detail.json
 
-Sitemap: https://yourdomain.com/sitemap.xml
-
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 10
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 10
-
-User-agent: Slurp
-Allow: /
-Crawl-delay: 10
-
-# Block bad bots
-User-agent: Baiduspider
-Disallow: /
-
-User-agent: Yandex
-Disallow: /
-
-# Prevent indexing of sensitive files
-Disallow: *.json
-Disallow: *.log
-Disallow: *.pdf
+Sitemap: https://lib.geneluo.fun/sitemap.xml
