@@ -76,7 +76,7 @@ async function showSearchResults(query) {
                     <p>${book.description}</p>
                     <p><strong>Year:</strong> ${book.year}</p>
                     ${tagsHTML}
-                    <button class="btn" onclick="window.location.href='books/${book.filename}'">View Details</button>
+                    <button class="btn" onclick="window.location.href='${book.url}'">View Details / Download Document</button>
                 </div>
             `;
         });
@@ -97,6 +97,11 @@ async function showSearchResults(query) {
             </div>
         `;
     }
+}
+
+function clearCache() {
+    localStorage.removeItem('book_detail');
+    window.location.reload();
 }
 
 // 页面加载完成后执行

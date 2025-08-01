@@ -4,7 +4,7 @@
         "author": "CoolFire",
         "description": "20 世纪末和 21 世纪初，由 CoolFire 编写的黑客入门教程",
         "year": "2000",
-        "filename": "coofire.pdf",
+        "filename": "https://github.com/gene-2012/gene-2012.github.io/blob/main/books/coolfire.pdf?raw=true",
         "tags": [
             "hacking",
             "hacker",
@@ -16,7 +16,7 @@
         "author": "Saul Schleimer, Daniel S. Wilkerson, Alex Aikon",
         "description": "A file fingerprinting algorithm, which is used to identify duplicate documents.",
         "year": "2005",
-        "filename": "moss_document.pdf",
+        "url": "https://github.com/gene-2012/gene-2012.github.io/blob/main/books/moss_document.pdf?raw=true",
         "tags": [
             "fingerprint",
             "text",
@@ -28,9 +28,9 @@
     {
         "title": "Python 编程：从入门到实践（第三版）",
         "author": "Eric Matthes",
-        "description": "Python 很棒的入门书籍",
+        "description": "Python Crash Course's Chinese translation. A great book for beginners.",
         "year": "2019",
-        "filename": "python_crash_course_3rd_edition.pdf",
+        "url": "books/python_crash_course_3rd_edition.pdf?raw=true",
         "tags": [
             "python",
             "algorithm",
@@ -39,6 +39,32 @@
             "pygame",
             "matpolotlib",
             "OOP"
+        ]
+    },
+    {
+        "title": "How to Code in Python",
+        "author": "Unknown, If you are the author, please contact me",
+        "description": "Books from digital ocean.",
+        "year": "0000",
+        "url": "https://do.co/python-book-pdf",
+        "tags": [
+            "python",
+            "algorithm",
+            "beginner"
+        ]
+    },
+    {
+        "title": "100 Page Python Intro",
+        "author": "Unknown, If you are the author, please contact me",
+        "description": "A online documentation for python beginners.",
+        "year": "0000",
+        "url": "https://learnbyexample.github.io/100_page_python_intro",
+        "tags": [
+            "python",
+            "algorithm",
+            "beginner",
+            "ebook",
+            "website"
         ]
     }
 ]
