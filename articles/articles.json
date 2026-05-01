@@ -1,4 +1,9 @@
 {
     "articles": [
+        {
+            "title": "What if I Provide a Geogebra to Agents?",
+            "file": "geogebra_agent_en.md",
+            "date": "2026-05-01"
+        }
     ]
 }
