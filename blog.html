@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gene Luo - Blog</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+<div class="main-container">
+    <!-- Navigation / Header -->
+    <div class="header-nav">
+        <table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+                    <a href="/">← Back to Home</a>
+                </td>
+                <td align="right" class="text-secondary">Gene Luo's Research Blog</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <!-- Main Article Container -->
+    <div class="article-container">
+        <div id="headers">
+            <!-- Dynamic Title -->
+        </div>
+        
+        <textarea id="md-text" style="display: none;"></textarea>
+        
+        <div id="md-content">
+            <p class="loading-text">Loading content...</p>
+        </div>
+
+        <br><br>
+        <hr>
+        <div class="footer">
+            &copy; 2026 Gene Luo. All rights reserved.
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="static/marked.min.js"></script>
+<script src="static/blogs.js"></script>
+
+<script>
+    load_blog_detail();
+</script>
+
+</body>
+</html>

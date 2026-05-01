@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #222;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Links */
+a {
+    color: #004499;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Main Container - 1400px centered layout */
+.main-container {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Article Container - 900px centered */
+.article-container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Header Navigation */
+.header-nav {
+    margin-bottom: 20px;
+}
+.header-nav .back-link {
+    font-size: 1rem;
+}
+.header-nav .site-title {
+    font-size: 1rem;
+    color: #888888;
+}
+
+/* Divider */
+hr {
+    color: #eeeeee;
+    size: 1;
+    border: none;
+    border-top: 1px solid #eeeeee;
+}
+
+/* Utility Colors */
+.text-secondary {
+    color: #888888;
+}
+.text-muted {
+    color: #999999;
+}
+
+/* Blog List Container */
+.blog-list {
+    padding-left: 30px;
+    background-color: #cccccc;
+    padding: 20px;
+}
+
+/* Profile Section */
+.profile-image {
+    width: 200px;
+    border: none;
+}
+
+/* Headings */
+h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5em;
+}
+
+/* Blog Content Styles */
+.loading-text {
+    color: #999;
+    font-style: italic;
+}
+
+/* Typography for Markdown Content */
+#md-content {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #333;
+}
+#md-content h1,
+#md-content h2,
+#md-content h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #111;
+    margin-top: 1.5em;
+}
+#md-content code {
+    font-family: monospace;
+    background: #f4f4f4;
+    padding: 2px 4px;
+    font-size: 0.9em;
+}
+#md-content pre {
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #eee;
+    overflow-x: auto;
+}
+#md-content blockquote {
+    border-left: 3px solid #ccc;
+    margin: 20px 0;
+    padding-left: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #888888;
+}
