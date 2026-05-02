@@ -71,7 +71,8 @@ async function load_blog_detail() {
         $('md-content').innerHTML = "<p>No blog specified.</p>";
         return;
     }
-    const article_baseurl = "https://raw.githubusercontent.com/gene-2012/gene-2012.github.io/refs/heads/main/articles/";
+    //const article_baseurl = "https://raw.githubusercontent.com/gene-2012/gene-2012.github.io/refs/heads/main/articles/";
+    const article_baseurl = "articles/"
     try {
         const response = await fetch(`${article_baseurl}${blog_file}`);
         if (!response.ok) throw new Error("File not found");
