@@ -1,4 +1,8 @@
 /* Global Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -16,16 +20,18 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Main Container - 1400px centered layout */
+/* Main Container - responsive centered layout */
 .main-container {
-    width: 1400px;
+    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
     padding: 15px;
 }
 
-/* Article Container - 900px centered */
+/* Article Container - responsive centered */
 .article-container {
-    width: 900px;
+    max-width: 900px;
+    width: 100%;
     margin: 0 auto;
     padding: 15px;
 }
@@ -67,7 +73,9 @@ hr {
 
 /* Profile Section */
 .profile-image {
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
     border: none;
 }
 
@@ -399,4 +407,194 @@ h2 {
     margin-top: 40px;
     font-size: 0.85rem;
     color: #888888;
+}
+
+/* Blog Element */
+.blog-elem {
+    margin-bottom: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #bbb;
+}
+.blog-elem:last-child {
+    border-bottom: none;
+}
+.blog-elem a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #004499;
+}
+.blog-elem .blog-date {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 4px;
+}
+
+/* Responsive Design - Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 10px;
+    }
+
+    .article-container {
+        padding: 10px;
+    }
+
+    /* Stack table rows vertically on tablet */
+    .main-container table,
+    .main-container tbody,
+    .main-container tr,
+    .main-container td {
+        display: block;
+        width: 100% !important;
+    }
+
+    .main-container tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-container td {
+        padding: 10px 0 !important;
+    }
+
+    /* Profile image centered on narrow screens */
+    .profile-image {
+        display: block;
+        margin: 0 auto 15px;
+        max-width: 150px;
+    }
+
+    /* Reduce blog list padding */
+    .blog-list {
+        padding: 15px;
+        padding-left: 15px;
+    }
+
+    /* Reduce content padding */
+    #md-content {
+        padding: 10px 10px 30px;
+    }
+
+    /* Adjust headings for narrower screens */
+    #md-content h1 {
+        font-size: 1.75rem;
+    }
+
+    #md-content h2 {
+        font-size: 1.35rem;
+    }
+
+    /* Disable text justify on narrow screens for better readability */
+    #md-content p {
+        text-align: left;
+        hyphens: none;
+    }
+
+    /* Make tables scrollable horizontally */
+    #md-content table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Code blocks adjust */
+    #md-content pre {
+        padding: 12px 14px;
+        font-size: 0.85rem;
+    }
+
+    /* Header nav stacks on narrow screens */
+    .header-nav table,
+    .header-nav tbody,
+    .header-nav tr,
+    .header-nav td {
+        display: block;
+        width: 100%;
+    }
+
+    .header-nav tr {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .header-nav td {
+        text-align: left !important;
+    }
+}
+
+/* Responsive Design - Phone (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    .main-container {
+        padding: 8px;
+    }
+
+    .article-container {
+        padding: 8px;
+    }
+
+    /* Smaller profile image */
+    .profile-image {
+        max-width: 120px;
+    }
+
+    /* Blog list */
+    .blog-list {
+        padding: 10px;
+    }
+
+    /* Content adjustments */
+    #md-content {
+        padding: 5px 5px 20px;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    #md-content h1 {
+        font-size: 1.5rem;
+    }
+
+    #md-content h2 {
+        font-size: 1.25rem;
+        margin-top: 2em;
+    }
+
+    #md-content h3 {
+        font-size: 1.1rem;
+    }
+
+    #md-content pre {
+        padding: 10px 12px;
+        font-size: 0.8rem;
+        border-left-width: 2px;
+    }
+
+    #md-content code {
+        font-size: 0.85em;
+    }
+
+    #md-content ul,
+    #md-content ol {
+        padding-left: 1.5em;
+    }
+
+    #md-content blockquote {
+        padding: 0.5em 0.75em;
+        border-left-width: 2px;
+    }
+
+    /* Blog element adjustments */
+    .blog-elem a {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 0.75rem;
+        margin-top: 25px;
+    }
 }
